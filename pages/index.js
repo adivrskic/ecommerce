@@ -1,6 +1,7 @@
 import React from "react";
 import { Product } from "../components/Product";
 import { HeroBanner } from "../components/HeroBanner";
+import { ProductDisplay } from "../components/ProductDisplay";
 import { FooterBanner } from "../components/FooterBanner";
 import { client } from "../lib/client";
 
@@ -8,16 +9,7 @@ const Home = ({ products, bannerData }) => {
   return (
     <>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
-
-      <div className="products-heading">
-        <h2>Best Sellers</h2>
-        <p>Our best selling speakers and headphones.</p>
-      </div>
-      <div className="products-container">
-        {products?.map((product) => (
-          <Product key={product._id} product={product} />
-        ))}
-      </div>
+      <ProductDisplay products={products.length && products} />
       <FooterBanner footerBanner={bannerData && bannerData[0]} />
     </>
   );

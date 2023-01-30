@@ -11,6 +11,7 @@ import toast from "react-hot-toast";
 import { useStateContext } from "../context/StateContext";
 import { urlFor } from "../lib/client";
 import getStripe from "../lib/getStripe";
+import styles from "./Cart.module.css";
 
 export default Cart = () => {
   const cartRef = useRef();
