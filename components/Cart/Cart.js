@@ -12,7 +12,7 @@ import { useStateContext } from "../context/StateContext";
 import { urlFor } from "../lib/client";
 import getStripe from "../lib/getStripe";
 
-const Cart = () => {
+export default Cart = () => {
   const cartRef = useRef();
   const {
     totalPrice,
@@ -136,5 +136,3 @@ const Cart = () => {
     </div>
   );
 };
-
-export default Cart;
