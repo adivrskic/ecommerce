@@ -1,0 +1,40 @@
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 5px;
+  position: relative;
+  max-width: 1600px;
+}
+
+.logo {
+  color: gray;
+  font-size: 18px;
+}
+
+.cartIcon {
+  font-size: 25px;
+  color: gray;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.4s ease;
+  border: none;
+  background-color: transparent;
+}
+
+.cartIcon:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cartIconQuantity {
+  position: absolute;
+  right: -8px;
+  font-size: 12px;
+  color: #efefef;
+  background-color: #5734e2;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 600;
+}

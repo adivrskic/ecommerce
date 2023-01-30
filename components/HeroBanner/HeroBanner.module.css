@@ -1,0 +1,43 @@
+.container {
+  padding: 100px 40px;
+  background-color: #eaed7f;
+  border-radius: 15px;
+  position: relative;
+  max-height: 700px;
+  line-height: 0.9;
+  width: 100%;
+}
+.container .text {
+  font-size: 20px;
+}
+.container button {
+  border-radius: 15px;
+  padding: 10px 16px;
+  background-color: #5734e2;
+  color: white;
+  border: none;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.container h3 {
+  font-size: 4rem;
+  margin-top: 4px;
+}
+.container h1 {
+  color: white;
+  font-size: 10em;
+  margin-left: -8px;
+  text-transform: uppercase;
+}
+.bannerImage {
+  position: absolute;
+  top: 50%;
+  right: -20%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: 550px;
+}
