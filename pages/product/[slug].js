@@ -10,7 +10,7 @@ import { Product } from "../../components/Product";
 import { useStateContext } from "../../context/StateContext";
 
 const ProductDetails = ({ product, products }) => {
-  const { image, name, details, price } = product;
+  const { image, name, details, price, numReviews, reviewScore } = product;
   const [index, setIndex] = useState(0);
 
   const { decreaseQty, increaseQty, qty, onAtc, setShowCart } =
@@ -48,13 +48,13 @@ const ProductDetails = ({ product, products }) => {
           <h1>{name}</h1>
           <div className="reviews">
             <div>
-              <AiFillStar />
-              <AiFillStar />
-              <AiFillStar />
-              <AiFillStar />
-              <AiOutlineStar />
+              {[...Array(reviewScore)].map((item) => (
+                <AiFillStar />
+              ))}
+              {reviewScore < 5 &&
+                [...Array(5 - reviewScore)].map((item) => <AiOutlineStar />)}
             </div>
-            <p>(20)</p>
+            <p>({numReviews} reviews)</p>
           </div>
           <h4>Details</h4>
           <p>{details}</p>

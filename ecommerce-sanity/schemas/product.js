@@ -34,5 +34,15 @@ export default {
       title: 'Details',
       type: 'string',
     },
+    {
+      name: 'reviewScore',
+      title: 'Review Score',
+      type: 'number',
+    },
+    {
+      name: 'numReviews',
+      title: 'Number of Reviews',
+      type: 'number',
+    },
   ],
 }

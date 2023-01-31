@@ -12,6 +12,21 @@ export const StateContext = ({ children }) => {
   let foundProduct;
   let index;
 
+  useEffect(() => {
+    const cartItems = JSON.parse(localStorage.getItem("cartItems"));
+    const quantity = JSON.parse(localStorage.getItem("totalQuantity"));
+    const totalPrice = JSON.parse(localStorage.getItem("totalPrice"));
+    setCartItems(cartItems || []);
+    setTotalQuantity(quantity || 0);
+    setTotalPrice(totalPrice || 0);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    localStorage.setItem("totalQuantity", JSON.stringify(totalQuantity));
+    localStorage.setItem("totalPrice", JSON.stringify(totalPrice));
+  }, [cartItems, totalQuantity, totalPrice]);
+
   const onAtc = (product, quantity) => {
     const checkProductInCart = cartItems.find(
       (item) => item._id === product._id

@@ -5,7 +5,7 @@ import styles from "./Footer.module.css";
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <p>2023 AV Headphones Store | All Rights Reserved</p>
+      <p>2023 Headphones R Us | All Rights Reserved</p>
       <p className={styles.icons}>
         <AiFillInstagram />
         <AiOutlineTwitter />

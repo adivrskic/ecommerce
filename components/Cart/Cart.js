@@ -8,12 +8,12 @@ import {
 } from "react-icons/ai";
 import { TiDeleteOutline } from "react-icons/ti";
 import toast from "react-hot-toast";
-import { useStateContext } from "../context/StateContext";
-import { urlFor } from "../lib/client";
-import getStripe from "../lib/getStripe";
+import { useStateContext } from "../../context/StateContext";
+import { urlFor } from "../../lib/client";
+import getStripe from "../../lib/getStripe";
 import styles from "./Cart.module.css";
 
-export default Cart = () => {
+const Cart = () => {
   const cartRef = useRef();
   const {
     totalPrice,
@@ -45,20 +45,20 @@ export default Cart = () => {
   };
 
   return (
-    <div className="cart-wrapper" ref={cartRef}>
-      <div className="cart-container">
+    <div className={styles.cartWrapper} ref={cartRef}>
+      <div className={styles.cartContainer}>
         <button
           type="button"
-          className="cart-heading"
+          className={styles.cartHeading}
           onClick={() => setShowCart(false)}
         >
           <AiOutlineLeft />
-          <span className="heading">Your Cart</span>
-          <span className="cart-num-items">({totalQuantity} items)</span>
+          <span className={styles.heading}>Your Cart</span>
+          <span className={styles.cartNumItems}>({totalQuantity} items)</span>
         </button>
 
         {cartItems.length < 1 && (
-          <div className="empty-cart">
+          <div className={styles.emptyCart}>
             <AiOutlineShopping size={150} />
             <h3>Your cart is empty</h3>
             <Link href="/">
@@ -121,8 +121,8 @@ export default Cart = () => {
             ))}
         </div>
         {cartItems.length >= 1 && (
-          <div className="cart-bottom">
-            <div className="total">
+          <div className={styles.cartBottom}>
+            <div className={styles.total}>
               <h3>Subtotal:</h3>
               <h3>{totalPrice}</h3>
             </div>
@@ -137,3 +137,4 @@ export default Cart = () => {
     </div>
   );
 };
+export default Cart;

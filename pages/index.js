@@ -1,5 +1,4 @@
 import React from "react";
-import { Product } from "../components/Product";
 import { HeroBanner } from "../components/HeroBanner";
 import { ProductDisplay } from "../components/ProductDisplay";
 import { FooterBanner } from "../components/FooterBanner";

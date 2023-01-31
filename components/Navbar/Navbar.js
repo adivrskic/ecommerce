@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { AiOutlineShopping } from "react-icons/ai";
-import { Cart } from "./";
+import { Cart } from "../Cart";
 import { useStateContext } from "../../context/StateContext";
 import styles from "./Navbar.module.css";
 
@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className={styles.navbarContainer}>
       <p className={styles.logo}>
-        <Link href="/">AV Headphones Store</Link>
+        <Link href="/">Headphones R Us</Link>
       </p>
       <button
         type="button"
