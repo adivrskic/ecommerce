@@ -34,7 +34,7 @@
 }
 .cartNumItems {
   margin-left: 10px;
-  color: #f02d34;
+  color: #5734e2;
 }
 .emptyCart {
   margin: 40px;
@@ -58,4 +58,20 @@
 }
 .total h3 {
   font-size: 22px;
+}
+
+@media screen and (max-width: 800px) {
+  .cartContainer {
+    width: 415px;
+    padding: 4px;
+  }
+  .cartHeading {
+    margin-top: 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cartContainer {
+    width: 90%;
+  }
 }
