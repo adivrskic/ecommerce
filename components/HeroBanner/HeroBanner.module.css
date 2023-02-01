@@ -46,26 +46,30 @@
   height: 550px;
 }
 
-@media screen and (max-width: 800px) {
-  .container {
-    height: 560px;
-    line-height: 1.3;
+@media screen and (max-width: 960px) {
+  .bannerImage {
+    width: 480px;
+    height: 480px;
+    right: -250px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .bannerImage {
+    display: none;
   }
 
-  .bannerImage {
-    width: 77%;
-    height: 62%;
-    top: -2%;
-    right: -6%;
-    transform: translate(-50%, -50%);
+  .container {
+    /* line-height: 1.3; */
+    padding: 100px 40px;
   }
 
   .container h1 {
-    font-size: 50px;
+    font-size: 64px;
   }
 
   .container h3 {
-    font-size: 40px;
+    font-size: 48px;
   }
 
   .container button {
