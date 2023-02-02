@@ -4,7 +4,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 100;
+  z-index: 100000;
   /* will-change: transform; */
   transition: all 1s ease-in-out;
 }
@@ -15,6 +15,7 @@
   float: right;
   padding: 40px 10px;
   position: relative;
+  z-index: 100000;
 }
 
 .cartHeading {
@@ -50,6 +51,11 @@
   right: 5px;
   width: 100%;
   padding: 30px 65px;
+}
+
+.cartBottom button {
+  width: 100% !important;
+  max-width: none !important;
 }
 
 .total {

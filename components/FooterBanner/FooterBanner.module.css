@@ -1,7 +1,6 @@
 .container {
   padding: 100px 40px;
   background-color: #5734e2;
-  border-radius: 15px;
   position: relative;
   height: 500px;
   line-height: 1;
@@ -28,7 +27,7 @@
 .left h3 {
   font-weight: 900;
   font-size: 80px;
-  margin-left: 25px;
+  margin-left: 17px;
 }
 .left p {
   margin: 18px;
@@ -66,7 +65,7 @@
     margin-left: 5px;
   }
   .left p {
-    margin: 18px;
+    margin: 18px 0;
   }
   .right h3 {
     font-size: 45px;

@@ -2,20 +2,21 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 5px;
+  padding: 40px 40px;
   position: relative;
   max-width: 1600px;
+  z-index: 100000;
 }
 
 .logo {
-  color: #4b1dd0;
+  color: black;
   font-weight: bold;
   font-size: 20px;
 }
 
 .cartIcon {
   font-size: 25px;
-  color: gray;
+  color: black;
   cursor: pointer;
   position: relative;
   transition: transform 0.4s ease;
